@@ -1,10 +1,12 @@
 .app {
-    background-color: $light1;
+    background-color: $primary;
     flex: 1;
     height: 100vh;
 }
 
 .text {
-   @include secondaryH1();
-   text-align: center;
+    text-align: center;
+    color: $light0;
+    font-size: 32px;
+    font-family: $regular;
 }

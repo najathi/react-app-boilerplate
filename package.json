@@ -42,15 +42,22 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-export-default-from": "^7.12.1",
     "@craco/craco": "^6.1.0",
+    "@types/lodash": "^4.14.168",
+    "@types/react-css-modules": "^4.6.2",
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "@typescript-eslint/parser": "^4.14.1",
     "babel-plugin-react-css-modules": "^5.2.6",
     "babel-plugin-react-css-modules-sass": "^1.1.0",
+    "craco-alias": "^2.1.1",
     "eslint": "^7.18.0",
     "eslint-plugin-react-app": "^6.2.2",
-    "@types/react-css-modules": "^4.6.2",
-    "craco-alias": "^2.1.1",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
     "node-sass": "^4.14.1",
-    "postcss-scss": "^3.0.4",
-    "purgecss": "^4.0.0"
+    "postcss-scss": "^2.1.1",
+    "purgecss": "^4.0.0",
+    "use-async-effect": "^2.2.2"
   }
 }

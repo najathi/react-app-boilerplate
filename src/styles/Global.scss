@@ -1,264 +1,66 @@
-@import "./constants/Global.scss";
+// Default Variables
 
-$primary: #FF4E39;
-$secondary:#5F7A9E;
-$alt:#F2C94C;
+$mobile-only: '(max-width:599px)';
 
-$primaryLight: #F5E8E6;
+$tablet-portrait-up: '(min-width:600px)';
+$tablet-portrait-only: '(min-width:600px) and (max-width:960px)';
+$tablet-portrait-down: '(max-width:959px)';
+
+$tablet-landscape-up: '(min-width:960px)';
+$tablet-landscape-only: '(min-width:960px) and (max-width:1200px)';
+$tablet-landscape-down: '(max-width:1199px)';
+
+$laptop-up: '(min-width:1200px)';
+$laptop-only: '(min-width:1200px) and (max-width:1660px)';
+$laptop-down: '(max-width:1659px)';
+
+$desktop-up: '(min-width:1660px)';
+$desktop-only: '(min-width:1660px)';
+$desktop-down: '(max-width:2559px)';
+
+$highres-up: '(min-width:2560px)';
+
+$regular: 'Titillium Web',
+sans-serif;
+
+$primary: #5450ff;
+$secondary:#ff835f;
+$alt:#ff3b90;
+
+$primaryLight: #eaf6ff;
 $primaryDark: #02004a;
 
 $light0: white;
-$light1: #f9f9f9;
-$light2: #EFF2F6;
-$light3: #DFE4EA;
-$light4: #C6C6C8;
-$light5: #bfbfbf;
-$light6: #bdbdbd;
+$light1: #f2f6f9;
+$light2: desaturate(darken($light1, 8%), 16%);
+$light3: desaturate(darken($light1, 16%), 16%);
+$light4: desaturate(darken($light1, 24%), 16%);
+$light5: desaturate(darken($light1, 32%), 16%);
 
 $dark0: black;
-$dark1: #383B3C;
-$dark2: #595C5E;
-$dark3: #6F7781;
+$dark1: #22212f;
+$dark2: desaturate(lighten($dark1, 16%), 8%);
+$dark3: desaturate(lighten($dark1, 24%), 8%);
+$dark4: desaturate(lighten($dark1, 32%), 12%);
+$dark5: desaturate(lighten($dark1, 40%), 12%);
 
 $purpleHl: #3D5AFE;
 $yellowHl: #FFC107;
 $orangeHl: #FF5722;
-$greenHl: #219653;
+$greenHl: #5DC828;
 $blueHl: #359EFF;
 $pinkHl: #E040FB;
 $redHl: #F5222D;
 
-$bodyBg: $light2;
+$bodyBg: $light1;
+$bodyText: $dark2;
+$headingText: $dark1;
+$labelText: $dark4;
 
-$modalBg: rgba($dark0, .5);
+$modalBg: rgba($bodyBg, .88);
 
 $panelBg: $light0;
-$panelBdr: $light3;
+$panelBdr: $light2;
+$panelFooterBg: rgba($light1, .5);
 $panelText: $bodyText;
 $panelHeading: $headingText;
-
-$fontPrimary: "Interstate";
-$fontSecondary: "AvenirNextCondensed",
-"Interstate",
-"Poppins";
-$fontTertiary: "Poppins";
-
-@mixin headline() {
-    font-family: $fontSecondary;
-    color: $dark1;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 66px;
-    letter-spacing: -0.5px;
-}
-
-@mixin primaryH1() {
-    font-family: $fontPrimary;
-    color: $dark1;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 26px;
-    letter-spacing: -0.5px;
-}
-
-@mixin primaryH2() {
-    font-family: $fontPrimary;
-    color: $dark1;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 22px;
-    letter-spacing: -0.5px;
-}
-
-@mixin primaryH3() {
-    font-family: $fontPrimary;
-    color: $dark1;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: -0.8px;
-}
-
-@mixin primaryH4() {
-    font-family: $fontPrimary;
-    color: $dark1;
-    font-weight: normal;
-    font-size: 17px;
-    line-height: 20px;
-}
-
-@mixin primaryH5() {
-    font-family: $fontPrimary;
-    color: $dark1;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 13px;
-    letter-spacing: 0.4px;
-}
-
-@mixin primaryP() {
-    font-family: $fontPrimary;
-    color: $dark1;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: -0.3px;
-}
-
-
-@mixin secondaryH1() {
-    font-family: $fontSecondary;
-    color: $dark1;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 40px;
-    letter-spacing: -0.5px;
-}
-
-@mixin secondaryH2() {
-    font-family: $fontSecondary;
-    color: $dark1;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 30px;
-    letter-spacing: -0.3px;
-}
-
-@mixin secondaryH3() {
-    font-family: $fontSecondary;
-    color: $dark1;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 30px;
-}
-
-@mixin secondaryH4() {
-    font-family: $fontSecondary;
-    color: $dark1;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 23px;
-}
-
-@mixin secondaryH5() {
-    font-family: $fontSecondary;
-    color: $dark1;
-    font-size: 11px;
-    line-height: 15px;
-    letter-spacing: 0.4px;
-}
-
-@mixin secondaryP() {
-    font-family: $fontSecondary;
-    color: $dark1;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 19px;
-    letter-spacing: 0.4px;
-}
-
-
-@mixin tertiaryH2() {
-    font-family: $fontTertiary;
-    color: $dark1;
-    font-weight: bold;
-    font-size: 72px;
-    line-height: 72px;
-    text-transform: uppercase;
-}
-
-@mixin tertiaryH3() {
-    font-family: $fontTertiary;
-    color: $dark1;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 30px;
-    text-transform: capitalize;
-}
-
-@mixin tertiaryH4() {
-    font-family: $fontTertiary;
-    color: $dark1;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 36px;
-    text-transform: capitalize;
-}
-
-@mixin tertiaryH5() {
-    font-family: $fontTertiary;
-    color: $dark1;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 36px;
-    text-decoration-line: underline;
-    text-transform: lowercase;
-}
-
-.headline {
-    @include headline();
-}
-
-.primaryH1 {
-    @include primaryH1();
-}
-
-.primaryH2 {
-    @include primaryH2();
-}
-
-.primaryH3 {
-    @include primaryH3();
-}
-
-.primaryH4 {
-    @include primaryH4();
-}
-
-.primaryH5 {
-    @include primaryH5();
-}
-
-.primaryP {
-    @include primaryP();
-}
-
-.secondaryH1 {
-    @include secondaryH1();
-}
-
-.secondaryH2 {
-    @include secondaryH2();
-}
-
-.secondaryH3 {
-    @include secondaryH3();
-}
-
-.secondaryH4 {
-    @include secondaryH4();
-}
-
-.secondaryH5 {
-    @include secondaryH5();
-}
-
-.secondaryP {
-    @include secondaryP();
-}
-
-.tertiaryH2 {
-    @include tertiaryH2();
-}
-
-.tertiaryH3 {
-    @include tertiaryH3();
-}
-
-.tertiaryH4 {
-    @include tertiaryH4();
-}
-
-.tertiaryH5 {
-    @include tertiaryH5();
-}

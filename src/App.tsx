@@ -3,14 +3,14 @@ import React from 'react';
 import './styles/Web.scss';
 
 import styles from "./App.module.scss";
-import BlankScreen from './screens/BlankScreen/BlankScreen';
 
 function App() {
 
   return (
     <div className={styles.app}>
-      <p className={styles.text}>Sample</p>
-      <BlankScreen />
+
+      <p className={styles.text}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, ab?</p>
+
     </div>
   );
 
