@@ -1,12 +1,16 @@
 .app {
     background-color: $primary;
     flex: 1;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
 }
 
 .text {
     text-align: center;
+    align-self: center;
     color: $light0;
+    flex: 1;
     font-size: 32px;
     font-family: $regular;
 }

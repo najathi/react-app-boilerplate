@@ -98,20 +98,20 @@ html {
 }
 
 
-// @media #{$laptop-up} {
+@media #{$laptop-up} {
 
-//     body,
-//     html {
-//         font-size: 14px;
-//     }
+    body,
+    html {
+        font-size: 14px;
+    }
 
-// }
+}
 
-// @media #{$desktop-up} {
+@media #{$desktop-up} {
 
-//     body,
-//     html {
-//         font-size: 14px;
-//     }
+    body,
+    html {
+        font-size: 14px;
+    }
 
-// }
+}

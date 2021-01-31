@@ -9,7 +9,7 @@ function App() {
   return (
     <div className={styles.app}>
 
-      <p className={styles.text}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, ab?</p>
+      <p className={styles.text}>@twin/najathi-web framework for React App</p>
 
     </div>
   );

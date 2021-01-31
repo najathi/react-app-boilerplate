@@ -57,7 +57,6 @@
     "moment": "^2.29.1",
     "node-sass": "^4.14.1",
     "postcss-scss": "^2.1.1",
-    "purgecss": "^4.0.0",
-    "use-async-effect": "^2.2.2"
+    "purgecss": "^4.0.0"
   }
 }
