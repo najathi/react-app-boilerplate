@@ -9,7 +9,7 @@ function App() {
   return (
     <div className={styles.app}>
 
-      <p className={styles.text}>@twin/najathi-web framework for React App</p>
+      <p className={styles.text}>@twin/flaaw-web framework for React App</p>
 
     </div>
   );
