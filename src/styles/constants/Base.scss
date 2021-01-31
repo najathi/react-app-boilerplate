@@ -1,0 +1,20 @@
+$link: $primary !default;
+$linkHover: $alt !default;
+
+a {
+    color: $link;
+}
+
+a:hover {
+    color: $linkHover;
+}
+
+.media-image {
+    background: rgba($dark1, .08);
+}
+
+.responsive,
+.responsive img {
+    max-width: 100%;
+    height: auto;
+}

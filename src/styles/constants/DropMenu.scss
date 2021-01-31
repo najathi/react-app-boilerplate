@@ -1,0 +1,51 @@
+/* Drop Menu */
+
+html {
+
+    .dropmenu-trigger.ant-dropdown-open>.btn {
+        background: $light0;
+        border: 1px solid $primary;
+        color: $primary;
+    }
+
+    .dropmenu-overlay {
+        border-radius: 3px;
+
+        ul {
+            background: $panelBg;
+            box-shadow: 0 0 1rem 0 rgba($panelBdr, .8);
+        }
+
+        li {
+            background: none !important;
+        }
+
+        .ant-dropdown-menu-item>a,
+        .ant-dropdown-menu-submenu-title>a {
+            padding: 8px 12px;
+            font-weight: 600;
+            // font-family: $regular;
+            color: $headingText;
+        }
+
+        .ant-dropdown-menu-item>a:hover,
+        .ant-dropdown-menu-submenu-title>a:hover {
+            background: $primaryLight;
+            color: $primary;
+        }
+
+    }
+
+    .dropmenu-overlay-ribbon {
+
+        ul {
+            box-shadow: 0 0 1rem 0 rgba($panelBdr, .4);
+        }
+
+    }
+
+}
+
+@if mixin-exists(extendDropMenuModule) {
+    @include extendDropMenuModule()
+}

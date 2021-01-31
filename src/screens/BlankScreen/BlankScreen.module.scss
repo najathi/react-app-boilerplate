@@ -1,0 +1,9 @@
+.container {
+    background-color: $primary;
+}
+
+.text {
+    @include headline();
+    color: $light0;
+    text-align: center;
+}

@@ -1,0 +1,30 @@
+/* Alert */
+
+html .ant-alert {
+    border-width: 1px;
+    border-radius: 3px;
+    background: #fff;
+}
+html {
+
+    .ant-alert-info {
+        border-color: $blueHl;
+        box-shadow: 0 0 12px 1px rgba($blueHl, .4)
+    }
+
+    .ant-alert-error {
+        border-color: $blueHl;
+        box-shadow: 0 0 12px 1px rgba($blueHl, .4)
+    }
+
+    .ant-alert-success {
+        border-color: $greenHl;
+        box-shadow: 0 0 12px 1px rgba($greenHl, .4)
+    }
+
+    .ant-alert-warning {
+        border-color: $orangeHl;
+        box-shadow: 0 0 12px 1px rgba($orangeHl, .4)
+    }
+
+}
